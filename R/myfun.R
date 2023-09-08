@@ -9,5 +9,5 @@
 #' @examples
 #' myfun(1:10)
 myfun <- function(x){
-  x^2 + 20
+  x^2 + 10
 }
