@@ -9,7 +9,7 @@ piecewise(x, coef)
 \arguments{
 \item{x}{the variable in the equation}
 
-\item{coef}{a coefficent from the data summary}
+\item{coef}{a coefficient from the lm summary}
 }
 \value{
 a one line piecewise function where the break is at x = 18
@@ -18,5 +18,5 @@ a one line piecewise function where the break is at x = 18
 Piecewise function at x = 18
 }
 \examples{
-\dontrun{myf(x,coef=tmp$coefficients[,"Estimate"])}
+\dontrun{piecewise(x,coef=tmp$coefficients[,"Estimate"])}
 }
