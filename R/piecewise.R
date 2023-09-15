@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun {myf(x,coef=tmp$coefficients[,"Estimate"]}
+#' \dontrun{myf(x,coef=tmp$coefficients[,"Estimate"])}
 piecewise = function(x,coef){
   coef[1]+coef[2]*(x) + coef[3]*(x-18)*(x-18>0)
 }
