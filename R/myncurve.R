@@ -8,12 +8,13 @@
 #' @export
 #'
 #' @examples
-#'
+#' myncurve(mu=10,sigma=5, a=6)
 myncurve = function(a,mu,sigma){
-  curve(dnorm(x,mean = mu,sd = sigma), xlim = c(mu-3*sigma, mu + 3*sigma))
+  curve(dnorm(x,mean = mu,sd = sigma), xlim = c(mu-(3*sigma), mu + (3*sigma)))
 
-  xcurve=seq(mu-3*sigma,5,length=1000)
-  ycurve=dnorm(curve,mean=mu,sd=sigma)
+
+  xcurve=seq(mu-3*sigma,a,length=1000)
+  ycurve=dnorm(xcurve,mean=mu,sd=sigma)
 
   polygon(c(mu-3*sigma,xcurve,a),c(0,ycurve,0),col="Red")
 
@@ -21,5 +22,5 @@ myncurve = function(a,mu,sigma){
   prob=pnorm(a,mean=0,sd=1)
   prob=round(prob,4)
 
-  text(mu,0, paste("Area = ", prob, sep=""))  # issues with the locator
+  text(mu,0, paste("Area = ", prob, sep=""))
 }
