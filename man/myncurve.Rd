@@ -19,3 +19,6 @@ a plot showing the normal curve, with the probability of x <= a in red
 \description{
 A normal curve where P(x<=a)
 }
+\examples{
+myncurve(mu=10,sigma=5, a=6)
+}
