@@ -1,9 +1,12 @@
-#' Title
+#' The mean and standard deviation of a normal distribution based on a normal distribution
 #'
 #' @param x the sample vector
 #' @param mu the range the mean of the sample could fall in
 #' @param sig the range the standard deviation of the sample could fall in
-#' @param ...
+#' @param ... additional information you can add to the graph
+#'
+#' @importFrom stats sd
+#' @importFrom graphics contour
 #'
 #' @return a list of important variables from this function as well as a plot of found values of mu and sigma
 #' @export
