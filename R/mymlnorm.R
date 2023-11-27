@@ -12,7 +12,10 @@
 #' @export
 #'
 #' @examples
-mymlnorm=function(x,mu,sig,...){  #x sample vector
+#' mymlnorm(x=c(10,12,13,12,11,10),mu=seq(7,15,length=1000),sig=seq(0.1,4,length=1000),lwd=2,labcex=1)
+mymlnorm=function(x,mu,sig,...)
+
+  {  #x sample vector
   nmu=length(mu) # number of values in mu
   nsig=length(sig)
   n=length(x) # sample size

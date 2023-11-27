@@ -21,3 +21,6 @@ a list of important variables from this function as well as a plot of found valu
 \description{
 The mean and standard deviation of a normal distribution based on a normal distribution
 }
+\examples{
+mymlnorm(x=c(10,12,13,12,11,10),mu=seq(7,15,length=1000),sig=seq(0.1,4,length=1000),lwd=2,labcex=1)
+}

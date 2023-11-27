@@ -1,0 +1,60 @@
+---
+title: "What this package does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What this package does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753MullinixFall23)
+```
+
+# What this package is
+This package was made as a part of the curriculum of the University of Oklahoma's Math 4753 class, taken during the Fall of 2023. The functions are from the labs we completed in this class.
+
+## Data set
+The data set apart of this this package is the fire damage data set from the textbook for this class. We are using this data in a SLR project.
+
+# Functions in Alphabetical Order
+## mybin
+mybin creates a binomial distribution where the user gets to select the number of iterations ran. A histogram of number of successes is printed.
+
+## myboot2
+myboot2 is a bootstrapping function that takes a data set and bootstraps the data an iter amount of times. It can use any function you give it. It will return a histogram of the bootstrap results.
+
+## myci
+myci is a function that will return a 95% mean confidence interval of one data set. It returns the 95% confidence interval for the mean.
+
+## mycltu
+mycltu is a central limit theorem for a uniform distribution. It returns a plot showing the sample mean vs the relative density of each mean.
+
+## myfun
+myfun was the first function made, so it simply squares a value or set of values and adds ten to each. 
+
+## mymaxlik
+mymaxlik finds the maximum likelihood estimate of data provided using the function specified. It returns a graphical representation of the data as well as a list containing important information.
+
+## mymlnorm
+mymlnorm finds the mean and standard deviation of a normal distribution based on a normal distribution. It returns a list of important variables from this function as well as a plot of found values of mu and sigma.
+
+## myncurve
+myncurve finds a normal curve where P(x<=a). It creates a plot showing the normal curve, with the probability of x <= a in red.
+
+## myquadplot
+myquadplot finds the quadratic line of best fit of Breast Height Diameters to tree heights. It is for a specific data set. It returns the estimated height of the Spruce Tree.
+
+## ntickets
+ntickets is a function that finds number of tickets needed to solve an airline overbooking problem. It returns two plots, one showing the discrete number of seats sold and one showing the continuous number of seats sold, as well as list containing useful data from the function. 
+
+## piecewise
+piecewise is a piecewise function that occurs at x = 18. It returns a one line piecewise function where the break is at x = 18.
+
